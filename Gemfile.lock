@@ -1,0 +1,101 @@
+GEM
+  remote: https://rubygems.org/
+  remote: https://ruby.taobao.org/
+  specs:
+    archive-tar-minitar (0.5.2)
+    arr-pm (0.0.10)
+      cabin (> 0)
+    as-notifications (1.0.1)
+    backports (3.6.8)
+    builder (3.2.2)
+    cabin (0.8.1)
+    childprocess (0.5.9)
+      ffi (~> 1.0, >= 1.0.11)
+    clamp (1.0.0)
+    coderay (1.1.1)
+    diff-lcs (1.2.5)
+    docile (1.1.5)
+    ffi (1.9.13)
+    fpm (1.6.1)
+      archive-tar-minitar
+      arr-pm (~> 0.0.10)
+      backports (>= 2.6.2)
+      cabin (>= 0.6.0)
+      childprocess
+      clamp (~> 1.0.0)
+      ffi
+      json (>= 1.7.7)
+      pleaserun (~> 0.0.24)
+      ruby-xz
+    i18n (0.7.0)
+    insist (1.0.0)
+    io-like (0.3.0)
+    json (1.8.3)
+    method_source (0.8.2)
+    multi_json (1.12.1)
+    mustache (0.99.8)
+    pleaserun (0.0.24)
+      cabin (> 0)
+      clamp
+      insist
+      mustache (= 0.99.8)
+      stud
+    pry (0.10.3)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    rack (1.5.3)
+    rack-test (0.6.3)
+      rack (>= 1.0)
+    rake (11.2.2)
+    rspec (3.5.0)
+      rspec-core (~> 3.5.0)
+      rspec-expectations (~> 3.5.0)
+      rspec-mocks (~> 3.5.0)
+    rspec-core (3.5.0)
+      rspec-support (~> 3.5.0)
+    rspec-expectations (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-mocks (3.5.0)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.5.0)
+    rspec-support (3.5.0)
+    rspec_junit_formatter (0.2.3)
+      builder (< 4)
+      rspec-core (>= 2, < 4, != 2.12.0)
+    ruby-xz (0.2.3)
+      ffi (~> 1.9)
+      io-like (~> 0.3)
+    shotgun (0.9.1)
+      rack (>= 1.0)
+    simplecov (0.12.0)
+      docile (~> 1.1.0)
+      json (>= 1.8, < 3)
+      simplecov-html (~> 0.10.0)
+    simplecov-html (0.10.0)
+    slop (3.6.0)
+    stud (0.0.22)
+    webmachine (1.2.2)
+      as-notifications (~> 1.0)
+      i18n (>= 0.4.0)
+      multi_json
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  fpm
+  json
+  pry
+  rack (~> 1.5.2)
+  rack-test
+  rake
+  rspec
+  rspec_junit_formatter
+  shotgun
+  simplecov
+  webmachine (~> 1.2.2)
+
+BUNDLED WITH
+   1.11.2
