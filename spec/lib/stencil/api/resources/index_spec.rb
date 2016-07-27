@@ -29,7 +29,8 @@ module Stencil
 
             it "returns the HAL Index links" do
               subject
-              expect(body_hash[:id]).to eq 10001
+              expect(body_hash[:_items].length).to eq 2
+              expect(body_hash[:_items].first[:id]).to eq 10001
             end
 
           end

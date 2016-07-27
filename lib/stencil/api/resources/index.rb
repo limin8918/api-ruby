@@ -22,8 +22,10 @@ module Stencil
 
         def to_json
           {
-            id: 10001,
-            name: "10001"
+            _items: [
+              { id: 10001, name: "10001"},
+              { id: 10002, name: "10002"},
+            ]
           }.to_json
         end
 
