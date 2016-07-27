@@ -1,10 +1,12 @@
-# Ruby Api
+# Backend Api
 
-## Overview
-*Server: Rack + Webmachine
-*Language: Ruby
-*Test: Rspec
+## Tech Stacks
+> Server: Rack + Webmachine
+
+> Language: Ruby
+
+> Test: Rspec
 
 ## Start Server
-rackup
-http://localhost:9292/index
+rackup -p 9001
+http://localhost:9001/index
