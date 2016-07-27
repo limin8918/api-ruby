@@ -15,7 +15,7 @@ RSpec.configure do | config |
   end
 end
 
-require_relative '../lib/stencil'
+require 'stencil'
 lib_dir = File.join(File.dirname(__FILE__), '..', 'lib','stencil')
 
 Dir.glob("#{lib_dir}/**/*.rb") do |path|

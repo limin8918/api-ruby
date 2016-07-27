@@ -1,6 +1,6 @@
 require 'webmachine'
 require 'webmachine/adapters/rack'
-require_relative '../lib/stencil/api/index'
+require 'stencil/api/index'
 
 module Stencil
   API ||= begin

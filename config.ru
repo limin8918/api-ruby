@@ -1,4 +1,5 @@
-require_relative 'lib/stencil'
+require File.dirname(__FILE__) + '/config/boot'
+require 'stencil'
 
 use Rack::Static, root: 'public', urls: ['/favicon.ico']
 

@@ -1,8 +1,8 @@
 require 'webmachine'
 require 'json'
-require_relative '../json_error_handler'
-require_relative '../resource_methods'
-require_relative '../../logging'
+require 'stencil/json_error_handler'
+require 'stencil/resource_methods'
+require 'logging'
 
 module Stencil
   module Api

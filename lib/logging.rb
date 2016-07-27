@@ -1,5 +1,5 @@
 require 'logger'
-require_relative 'project_root'
+require 'project_root'
 
 module Stencil
 
