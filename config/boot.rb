@@ -1,7 +1,6 @@
-
 # Avoid modifying boot.rb for easier stencil upgrading - modify stencil.rb instead
 
-$LOAD_PATH << File.expand_path('../../lib', __FILE__)
+$LOAD_PATH << File.expand_path('../', __FILE__)
 
 # Default environment
 # Try to avoid using RACK_ENV as a switch unless absolutely necessary.
@@ -15,12 +14,6 @@ if File.exists?(ENV['BUNDLE_GEMFILE'])
   Bundler.require
 end
 
-if ENV['RACK_ENV'] == 'production'
-  require 'stencil/environment_variables'
-  Stencil::EnvironmentVariables.check
-  # Initialise NewRelic
-end
-
 
 # Load Stencil
-require 'stencil'
+require 'sten'

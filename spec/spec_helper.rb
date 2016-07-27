@@ -1,8 +1,6 @@
 ENV['RACK_ENV'] = 'test'
-require 'support/simple_cov' # At the top because simplecov needs to watch files being loaded
+require 'support/simple_cov'
 
-# Adding files to /spec/support rather than customising
-# spec_helper will assist in detecting diffs due to stencil upgrades.
 Dir[('./spec/support/**/*.rb')].each { |f| require f }
 
 RSpec.configure do | config |
@@ -14,6 +12,15 @@ RSpec.configure do | config |
 
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
+  end
+end
+
+require_relative '../lib/stencil'
+lib_dir = File.join(File.dirname(__FILE__), '..', 'lib','stencil')
+
+Dir.glob("#{lib_dir}/**/*.rb") do |path|
+  if FileTest.file? path
+    require path
   end
 end
 

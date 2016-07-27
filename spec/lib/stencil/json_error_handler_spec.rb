@@ -1,6 +1,4 @@
-require './spec/support/webmachine_rack_test_methods'
-require 'stencil/api/json_error_handler'
-require './spec/support/shared_examples_for_error_handling'
+require 'spec_helper'
 
 module Stencil
   module Api

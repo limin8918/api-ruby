@@ -1,4 +1,4 @@
-require 'stencil/api/resource_methods'
+require 'spec_helper'
 
 module Stencil
   module Api

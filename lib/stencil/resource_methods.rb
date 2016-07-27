@@ -1,14 +1,11 @@
 require 'json'
-require 'stencil/logging'
+require_relative '../logging'
 
 module Stencil
   module Api
-
     module ResourceMethods
 
       def resource_uri
-        # In prod, the netscaler is addressed with https, but the server instance receives the request as http
-        # To allow clients to use the HAL URLs, we need to return the correct scheme
         remove_trailing_slash(remove_params(set_scheme(request.uri.to_s)))
       end
 

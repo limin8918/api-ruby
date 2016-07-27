@@ -1,8 +1,5 @@
 require 'logger'
-require 'stencil/project_root'
-
-# You can access the logger via "Stencil.logger.info ...", or by including it in a class (include Stencil::Logging) and calling "logger.info ..".
-# The logger is available for both instance and class methods, as the Logger module extends the class when it is included.
+require_relative 'project_root'
 
 module Stencil
 

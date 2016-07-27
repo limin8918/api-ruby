@@ -1,5 +1,5 @@
 require 'json'
-require 'stencil/logging'
+require_relative '../logging'
 
 module Stencil
   module Api
