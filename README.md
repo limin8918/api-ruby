@@ -8,5 +8,8 @@
 > Test: Rspec
 
 ## Start Server
-rackup -p 9001
-http://localhost:9001/index
+> bundle install
+
+> rackup -p 9001
+
+> http://localhost:9001/index
