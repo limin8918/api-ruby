@@ -18,7 +18,7 @@ if ENV['RACK_ENV'] != 'production'
 
   ENV['COVERAGE']='true'
 
-  task :default => [:spec]
+  task :default => [:specs]
 
   FileList['./lib/tasks/**/*.rake'].each { |task| load task }
 end
